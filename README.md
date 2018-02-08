@@ -69,7 +69,7 @@ to train the AI to steer the cat towards the moving bug.
 
 The bug's hopping motion is random, with the probability that the bug hops during a turn
 varying as ~ constant/separation. The bug's hop has two components, a
-random hop of distance of order ~2 in any directon + a systematic hop whose distance
+random hop whose distance of order ~2 in any directon + a systematic hop whose distance
 is ~1/separation in the direction away from the cat.
 
 But before we train the AI to steer the cat, lets play one game of cat-chase-grasshopper
