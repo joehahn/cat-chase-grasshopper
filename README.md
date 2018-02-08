@@ -78,9 +78,11 @@ at slow speeds, and the following plot shows the cat's trajectory (green dots)
 as it chases the hopping grasshopper as it random-walks (blue dots).
 ![](figs/xy_slow.png)
 
-The large translucent dots indicate the cat and bug's final positions, and initial
-positions are the intermediate dense dots.
- 
+The large translucent dots show the cat and bug's final positions, and initial
+positions are the intermediate dense dots, and the plot below shows that rewards
+that the cat accumulated during this game:
+ ![](figs/rewards.png)
+
 
 The point of this demo is to use
 Q-learning to train the cat to stay as near as possib
