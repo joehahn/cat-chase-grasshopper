@@ -118,7 +118,7 @@ Note that the programmatic slow and fast strategies accrue rewards at nearly ide
 while the AI-driven smart strategy generates rewards almost 3 times faster.
 Of course our goal was to build a self-taught AI that outperforms the human-generated
 slow & fast strategies, and that is demonstrated by following chart showing that the mean bug-cat
-separation is indeed 2 times smaller when the smart strategy is employed:
+separation is almost 2 times smaller when the smart strategy is employed:
 ![](figs/separation_strategy.png)
 :thumbsup:
 
