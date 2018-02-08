@@ -106,11 +106,13 @@ the data volumes are too small to benefit from GPU acceleration. Cat-chase-grass
 is then played using the 'smart' strategy with the trained neural net steering the cat:
 ![](figs/xy_smart.png)<br />
 Close inspection shows that the AI-driven cat does indeed run fast between hops,
-with multiple 180s used to back the cat over the bug multiple times. The cat's
-distribution of actions is:
+with 180s used to back the cat over the bug again. The cat's distribution of actions is:
 ![](figs/actions.png)<br />
 
-The...
+Cat-chase-grasshopper is then played 20 more times for each of the cat-navigation
+strategies (slow, fast, and smart), and the following charts the average rate
+at which each strategy accumulates rewards:
+![](figs/strategy_rewards.png)
 
 :thumbsup:
 
