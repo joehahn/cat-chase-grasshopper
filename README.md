@@ -15,7 +15,7 @@ this optimization problem: imagine a box with two dials that can be used
 to move an agent (the cat) towards the a moving target (the grasshopper). The goal
 is to write self-learning code to turn the dials so that the agent-target separation stays
 minimized, without knowing in advance how the agent will respond to twists of the
-dials. Solution: use Q-learning to teach a neural network how to turn the dials so that
+dials. Solution: use Q-learning to train the neural network to turn the dials so that
 the cat chases the grasshopper as closely as possible.
 
 ### Setup:
