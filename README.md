@@ -103,9 +103,14 @@ so 5 squared made even is 24 neurons.
 200 games are played while training the neural network, which takes about 8 minutes on
 my Mac laptop's CPU. Note that porting this demo to a GPU won't save you any time, 
 the data volumes are too small to benefit from GPU acceleration. Cat-chase-grasshopper
-is then played using the 'smart' strategy which uses the trained neural net used to steer the cat:
+is then played using the 'smart' strategy with the trained neural net steering the cat:
 ![](figs/xy_smart.png)<br />
-Note that...
+Close inspection shows that the AI-driven cat does indeed run fast between hops,
+with multiple 180s used to back the cat over the bug multiple times. The cat's
+distribution of actions is:
+![](figs/actions.png)<br />
+
+The...
 
 :thumbsup:
 
