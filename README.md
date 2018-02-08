@@ -13,7 +13,7 @@ a virtual cat to chase after a virtual bug that hops away as the cat approaches.
 A secondary goal of this demo is to see if Q-learning can be used to solve
 this optimization problem: imagine a box with two dials that can be used
 to move an agent (the cat) towards the a moving target (the grasshopper). The goal
-is to write code that turns the dial so that the agent-target separation stays
+is to write code that turns the dials so that the agent-target separation stays
 minimized, without knowing in advance how the agent responds to twists of either
 dial. Solution: use Q-learning to teach a neural network how to turn the dials so that
 the cat chases the grasshopper as closely as possible.
@@ -45,20 +45,20 @@ and load the cat-chase-grasshopper.ipynb notebook > Run.
 
 ### Results:
 
-Cat-chase-grasshopper is a 2D game comprised of a the virtual cat that is always chasing
-a virtual grasshopper that hops away as the cat nears. The game is turn based, and each
+Cat-chase-grasshopper is a 2D game composed of a virtual cat that is always chasing
+a virtual grasshopper that hops away whenever the cat nears. The game is turn based, and each
 turn the cat can execute one of these actions: move slow or fast with a slight
 25 degree turn to the left or right, or turn 180 degrees. So the cat has five possible
 actions: move slow & turn left, move slow & turn right, move fast turn left, move fast
-turn right, or turn around. Nearly straight motion is thus achieved by alternating
+turn right, or turn around. Nearly straight motion is achieved by alternating
 left and right turns.
 
 The reason that the cat's movements are quantized is so that we can use Q-learning
-to drive the cat towards the grasshopper, Q-learning is a fairly straightforward
+to drive the cat towards the grasshopper. Q-learning is a fairly straightforward
 and not-too-difficult reinforcement-learning algorithm, but one that is restricted
-to discreet actions...if the cat was instead allowed a continuous choice of movements such as
+to discreet actions. If the cat was instead allowed a continuous choice of movements such as
 variable speed or direction, then we would have to use much more complex algorithms
-like actor-critic or DDPG, and that is not being attempted here...
+like actor-critic or DDPG, and that is not being attempted here.
  
 
 The point of this demo is to use
