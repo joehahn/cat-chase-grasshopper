@@ -13,9 +13,9 @@ a virtual cat to chase after a virtual bug that hops away as the cat nears.
 A secondary goal of this demo is to see if Q-learning can be used to solve
 this optimization problem: imagine a box with two dials that can be used
 to move an agent (the cat) towards the a moving target (the grasshopper). The goal
-is to write code that turns the dials so that the agent-target separation stays
-minimized, without knowing in advance how the agent responds to twists of either
-dial. Solution: use Q-learning to teach a neural network how to turn the dials so that
+is to write self-learning code to turn the dials so that the agent-target separation stays
+minimized, without knowing in advance how the agent will respond to twists of the
+dials. Solution: use Q-learning to teach a neural network how to turn the dials so that
 the cat chases the grasshopper as closely as possible.
 
 ### Setup:
