@@ -67,11 +67,19 @@ reward that increases as the bug-cat separation is reduced:
 This varies roughly as reward ~ 1/separation - separation/5, and these rewards will be used
 to train the AI to to steer the cat towards the bug.
 
-The bug's hopping motion is random, with the probability of the bug executing a hop
-varying roughly as probability ~ constant/separation. A hop has two components, a
-random hop of distance ~2 in any directon + a systematic component whose distance
-is ~1/distance in the direction away from the cat.
+The bug's hopping motion is random, with the probability that the bug hops during a turn
+varying as ~ constant/separation. The bug's hop has two components, a
+random hop of distance of order ~2 in any directon + a systematic hop whose distance
+is ~1/separation in the direction away from the cat.
 
+But before we train the AI to steer the cat, lets play one game of cat-chase-grasshopper
+using the 'slow' strategy where the cat is preprogrammed to advance towards the bug
+at slow speeds, and the following plot shows the cat's trajectory (green dots)
+as it chases the hopping grasshopper as it random-walks (blue dots).
+![](figs/xy_slow.png)
+The large translucent dots indicate the cat and bug's final positions, and initial
+positions are the intermediate dense dots.
+ 
 
 The point of this demo is to use
 Q-learning to train the cat to stay as near as possib
