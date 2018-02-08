@@ -113,9 +113,12 @@ the AI is:
 Cat-chase-grasshopper is then played 20 more times for each of the cat-navigation
 strategies (slow, fast, and smart), and the following charts the average rate
 at which each strategy accumulates rewards:
-![](figs/strategy_rewards.png)
-Note that he slow and fast strategies accrue rewards at nearly identical rates,
-while the smart strategy generates rewards about 2.5 times faster.
-
+![](figs/strategy_rewards.png)<br />
+Note that the programmatic slow and fast strategies accrue rewards at nearly identical rates,
+while the AI-driven smart strategy generates rewards 2.5 times faster.
+Of course our goal was to build a self-taught AI that outperforms the human-generated
+slow & fast strategies, and that is demonstrated by following chart showing that the mean bug-cat
+separation is 2 times smaller when the smart strategy is employed:
+![](figs/separation_strategy.png)
 :thumbsup:
 
