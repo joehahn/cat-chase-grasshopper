@@ -86,7 +86,7 @@ that the cat accumulated during this game:
 Now play this game again using the 'fast' strategy, here the cat is preprogrammed
 to always turn towards the bug and advance at the faster speed that is 5x faster than
 the cat's slow speed:
-![](figs/xy_fast.png)
+![](figs/xy_fast.png)<br />
 So after each hop, the cat can narrow the distance in less time, but because the cat
 can only turn in 25 degree increments, the fast cat then has to make 
 fairly wide orbits around the bug to scoop up rewards until the bug eventually
