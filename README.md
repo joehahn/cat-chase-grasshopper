@@ -92,7 +92,7 @@ hops away.
 
 A wiser strategy would be to run fast after the bug hops and then slow down to receive greater
 rewards as the slower cat makes tighter circles around the bug. Or overrun the bug
-and then turn 180 degrees. But we don't want to encode that strategy ourselves,
+and turn 180 degrees. But we don't want to encode that strategy ourselves,
 since it might not be optimal anyway. Instead, lets use Q-learning to train
 a neural network to discover a more optimal cat-navigating strategy.
 The simple neural network used here has two densely-connected hidden layers composed of 24
@@ -100,6 +100,12 @@ neurons each; this choice is inspired by the game's 2D geometry and the cat's 5 
 so 5 squared made even is 24 neurons.
 ![](figs/network.png)
 
+200 games are played while training the neural network, which takes about 8 minutes on
+my Mac laptop's CPU. Note that porting this demo to a GPU won't save you any time, 
+the data volumes are too small to benefit from GPU acceleration. Cat-chase-grasshopper
+is then played using the 'smart' strategy which uses the trained neural net used to steer the cat:
+![](figs/xy_smart.png)<br />
+Note that...
 
 :thumbsup:
 
