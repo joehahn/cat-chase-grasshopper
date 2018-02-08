@@ -60,6 +60,18 @@ to discreet actions. If the cat was instead allowed a continuous choice of movem
 variable speed or direction, then we would have to use much more complex algorithms
 like actor-critic or DDPG, and that is not being attempted here.
  
+Helper functions are stored in chase.py, these functions are used to initialize
+the game and the bug and cat's x,y coordinates. Every turn the cat is given a
+reward that increases as the bug-cat separation is reduced:
+![](figs/move.png)
+This varies roughly as reward ~ 1/separation - separation/5, and these rewards will be used
+to train the AI to to steer the cat towards the bug.
+
+The bug's hopping motion is random, with the probability of the bug executing a hop
+varying roughly as probability ~ constant/separation. A hop has two components, a
+random hop of distance ~2 in any directon + a systematic component whose distance
+is ~1/distance in the direction away from the cat.
+
 
 The point of this demo is to use
 Q-learning to train the cat to stay as near as possib
