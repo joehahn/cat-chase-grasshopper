@@ -84,9 +84,19 @@ that the cat accumulated during this game:
  ![](figs/rewards.png)
 
 Now play this game again using the 'fast' strategy, here the cat is preprogrammed
-to always turn towards the bug and advance at the faster speed that is 5x faster than slow:
+to always turn towards the bug and advance at the faster speed that is 5x faster than
+the cat's slow speed:
 ![](figs/xy_fast.png)
+So after each hop, the cat can narrow the distance in less time, but because the cat
+can only turn in 25 degree increments, the fast cat then has to make 
+fairly wide orbits around the bug to scoop up rewards, at least until the bug hops away.
 
+A wiser chase strategy would be to run fast after the bug hops, and receive greater
+rewards as the cat makes slower tighter circles around the bug. Or overrun the bug
+and then turn 180 degrees. But we don't want to bother coding up that strategy,
+which might or might not be optimal anyway. Instead, lets use Q-learning to train
+a neural network to discover a more optimal cat-navigating strategy.
+ 
 
 
 :thumbsup:
