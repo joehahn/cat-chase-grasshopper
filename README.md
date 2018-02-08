@@ -76,8 +76,7 @@ But before we train the AI to steer the cat, lets play one game of cat-chase-gra
 using the 'slow' strategy where the cat is preprogrammed to advance towards the bug
 at slow speeds, and the following plot shows the cat's trajectory (green dots)
 as it chases the hopping grasshopper as it random-walks (blue dots).
-![](figs/xy_slow.png)
-
+![](figs/xy_slow.png)<br />
 The large translucent dots show the cat and bug's final positions, and initial
 positions are the intermediate dense dots, and the plot below shows that rewards
 that the cat accumulated during this game:
@@ -86,8 +85,7 @@ that the cat accumulated during this game:
 Now play this game again using the 'fast' strategy, here the cat is preprogrammed
 to always turn towards the bug and advance at the faster speed that is 5x faster than
 the cat's slow speed:
-![](figs/xy_fast.png)
-
+![](figs/xy_fast.png)<br />
 So after each hop, the cat can narrow the distance in less time, but because the cat
 can only turn in 25 degree increments, the fast cat then has to make 
 fairly wide orbits around the bug to scoop up rewards until the bug eventually
