@@ -65,7 +65,7 @@ the game and initialize the bug & cat's x,y coordinates. Every turn the cat is g
 reward that increases as the bug-cat separation is reduced:
 ![](figs/reward_vs_separation.png)
 This varies roughly as reward ~ 1/separation - separation/5, and these rewards will be used
-to train the AI to to steer the cat towards the bug.
+to train the AI to steer the cat towards the moving bug.
 
 The bug's hopping motion is random, with the probability that the bug hops during a turn
 varying as ~ constant/separation. The bug's hop has two components, a
