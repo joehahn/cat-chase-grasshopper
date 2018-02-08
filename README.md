@@ -8,7 +8,7 @@ git branch=master
 
 ### Summary:
 This cat-chase-grasshopper demo uses Q-learning to teach a neural net AI to instruct
-a virtual cat to chase after a virtual bug that hops away as the cat approaches.
+a virtual cat to chase after a virtual bug that hops away as the cat nears.
 
 A secondary goal of this demo is to see if Q-learning can be used to solve
 this optimization problem: imagine a box with two dials that can be used
