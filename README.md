@@ -111,7 +111,7 @@ the AI is:
 ![](figs/actions.png)<br />
 
 Cat-chase-grasshopper is then played 20 more times for each of the cat-navigation
-strategies (slow, fast, and smart), and the following charts the average rate
+strategies (slow, fast, and smart), and the following shows the average rate
 at which each strategy accumulates rewards:
 ![](figs/strategy_rewards.png)<br />
 Note that the programmatic slow and fast strategies accrue rewards at nearly identical rates,
