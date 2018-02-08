@@ -115,7 +115,7 @@ strategies (slow, fast, and smart), and the following charts the average rate
 at which each strategy accumulates rewards:
 ![](figs/strategy_rewards.png)
 Note that he slow and fast strategies accrue rewards at nearly identical rates,
-while the smart strategy generates rewards 2.5 times faster.
+while the smart strategy generates rewards about 2.5 times faster.
 
 :thumbsup:
 
