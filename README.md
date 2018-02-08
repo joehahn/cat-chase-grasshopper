@@ -122,3 +122,9 @@ separation is almost 2 times smaller when the smart strategy is employed:
 ![](figs/separation_strategy.png)
 :thumbsup:
 
+### To do:
+
+A logical next step would be to dive into the neural network, to see which neurons
+fire as the can and bug move about, and to try to decode or visualize the strategy 
+that the trained AI ultimately settles on.
+
