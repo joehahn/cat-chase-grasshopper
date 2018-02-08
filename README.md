@@ -46,7 +46,7 @@ and load the cat-chase-grasshopper.ipynb notebook > Run.
 ### Results:
 
 Cat-chase-grasshopper is a 2D game composed of a virtual cat that is always chasing
-a virtual grasshopper that hops away whenever the cat nears. The game is turn based, and each
+a virtual grasshopper that hops away whenever the cat nears. The game is turn-based, and each
 turn the cat can execute one of these actions: move slow or fast with a slight
 25 degree turn to the left or right, or turn 180 degrees. So the cat has five possible
 actions: move slow & turn left, move slow & turn right, move fast turn left, move fast
@@ -58,10 +58,10 @@ to drive the cat towards the grasshopper. Q-learning is a fairly straightforward
 and not-too-difficult reinforcement-learning algorithm, but one that is restricted
 to discreet actions. If the cat was instead allowed a continuous choice of movements such as
 variable speed or direction, then we would have to use much more complex algorithms
-like actor-critic or DDPG, and that is not being attempted here.
+like actor-critic or DDPG, and that is not attempted here.
  
-Helper functions are stored in chase.py, these functions are used to initialize
-the game and the bug and cat's x,y coordinates. Every turn the cat is given a
+Helper functions are stored in chase.py, these functions are used to define
+the game and initialize the bug & cat's x,y coordinates. Every turn the cat is given a
 reward that increases as the bug-cat separation is reduced:
 ![](figs/move.png)
 This varies roughly as reward ~ 1/separation - separation/5, and these rewards will be used
