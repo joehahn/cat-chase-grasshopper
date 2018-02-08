@@ -87,7 +87,6 @@ Now play this game again using the 'fast' strategy, here the cat is preprogramme
 to always turn towards the bug and advance at the faster speed that is 5x faster than
 the cat's slow speed:
 ![](figs/xy_fast.png)
-
 So after each hop, the cat can narrow the distance in less time, but because the cat
 can only turn in 25 degree increments, the fast cat then has to make 
 fairly wide orbits around the bug to scoop up rewards until the bug eventually
@@ -98,7 +97,9 @@ rewards as the slower cat makes tighter circles around the bug. Or overrun the b
 and then turn 180 degrees. But we don't want to encode that strategy ourselves,
 since it might not be optimal anyway. Instead, lets use Q-learning to train
 a neural network to discover a more optimal cat-navigating strategy.
- 
+The simple neural network used here has two densely-connected hidden layers composed of 24
+neurons each; this choice is inspired by the game's 2D geometry and the cat's 5 possible actions
+so 5 squared made even is 24 neurons.
 ![](figs/network.png)
 
 
