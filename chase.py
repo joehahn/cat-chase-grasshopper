@@ -237,7 +237,8 @@ def state2vector(state):
     v = np.array([cat_run_direction_angle, bug_direction_angle, bug_distance])
     return v.reshape(1, len(v))
 
-#train model
+#train model via a Q-learning algorithm that was adapted from
+#source code that Outlace published at http://outlace.com/rlpart3.html
 def train(environment, model, N_training_games, max_distance, gamma, memories, batch_size, debug=False):
     epsilon = 1.0
     for N_games in range(N_training_games):

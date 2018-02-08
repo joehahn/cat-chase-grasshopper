@@ -1,35 +1,39 @@
-# grid_walker
+# cat-chase-grasshopper
 
 by Joe Hahn,<br />
 jmh.datasciences@gmail.com,<br />
-3 February 2018<br />
+8 February 2018<br />
 git branch=master
 
 
 ### Summary:
-This grid_walker demo uses Q-learning to teach a neural net AI how to navigate an agent
-about a very simple 6x6 grid, guiding it towards a goal while avoiding obstacles and hazards.
+This cat-chase-grasshopper demo uses Q-learning to teach a neural net AI how to instruct
+a virtual cat to chase after a virtual bug that hops away as the cat approaches.
 
-This version of grid_walker was adapted from a blog post by Outlace,
-http://outlace.com/rlpart3.html. Outlace's original code is somewhat a mess,
-while the version provided below is (I think) significantly less a mess.
-Nonetheless Outlace's discussion of the Q-learning algorithm is excellent and worth a read.
+A secondary goal of this demo is to see if Q-learning can be used to solve
+this optimization problem: imagine a box with two dials that can be used
+to move an agent (the cat) towards the a moving target (the grasshopper). The goal
+is to write code that turns the dial so that the agent-target separation stays
+minimized, without knowing in advance how the agent responds to twists of either
+dial. Solution: use Q-learning to teach a neural network how to turn the dials so that
+the cat chases the grasshopper as closely as possible.
 
 ### Setup:
 
 Clone this repo:
 
-    git clone https://github.com/joehahn/grid_walker.git
-    cd grid_walker
+    git clone https://github.com/joehahn/cat-chase-grasshopper.git
+    cd cat-chase-grasshopper
 
-Note that I am executing grid_walker on a Mac laptop where I've installed
-Anaconda python 2.7 plus a few other needed libraries via:
+I am executing cat-chase-grasshopper on a Mac laptop where I've installed
+Anaconda python 2.7 plus additional libraries via:
 
     wget https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh
     chmod +x ./Miniconda2-latest-MacOSX-x86_64.sh
     ./Miniconda2-latest-MacOSX-x86_64.sh -b -p ~/miniconda2
     ~/miniconda2/bin/conda install -y jupyter
     ~/miniconda2/bin/conda install -y keras
+    ~/miniconda2/bin/conda install -y seaborn
 
 ### Execute:
 
@@ -37,10 +41,28 @@ Start Jupyter notebook via
 
     jupyter notebook
 
-and load the grid_walker.ipynb notebook > Run.
+and load the cat-chase-grasshopper.ipynb notebook > Run.
 
 ### Results:
 
+Cat-chase-grasshopper is a 2D game comprised of a the virtual cat that is always chasing
+a virtual grasshopper that hops away as the cat nears. The game is turn based, and each
+turn the cat can execute one of these actions: move slow or fast with a slight
+25 degree turn to the left or right, or turn 180 degrees. So the cat has five possible
+actions: move slow & turn left, move slow & turn right, move fast turn left, move fast
+turn right, or turn around. Nearly straight motion is thus achieved by alternating
+left and right turns.
+
+The reason that the cat's movements are quantized is so that we can use Q-learning
+to drive the cat towards the grasshopper, Q-learning is a fairly straightforward
+and not-too-difficult reinforcement-learning algorithm, but one that is restricted
+to discreet actions...if the cat was instead allowed a continuous choice of movements such as
+variable speed or direction, then we would have to use much more complex algorithms
+like actor-critic or DDPG, and that is not being attempted here...
+ 
+
+The point of this demo is to use
+Q-learning to train the cat to stay as near as possib
 Grid_walker is a simple game that consistes of 4 objects: an agent A, wall W, pit P, and goal G,
 with these objects inhabiting a 6x6 grid. In the following, a 6x6 string array is used
 to track and display the locations of all 4 objects:
