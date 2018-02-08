@@ -63,7 +63,7 @@ like actor-critic or DDPG, and that is not attempted here.
 Helper functions are stored in chase.py, these functions are used to define
 the game and initialize the bug & cat's x,y coordinates. Every turn the cat is given a
 reward that increases as the bug-cat separation is reduced:
-![](figs/move.png)
+![](figs/reward_vs_separation.png)
 This varies roughly as reward ~ 1/separation - separation/5, and these rewards will be used
 to train the AI to to steer the cat towards the bug.
 
