@@ -95,10 +95,11 @@ hops away.
 
 A wiser strategy would be to run fast after the bug hops and then slow down to receive greater
 rewards as the slower cat makes tighter circles around the bug. Or overrun the bug
-and then turn 180 degrees. But we don't want to bother coding up that strategy,
-which might or might not be optimal anyway. Instead, lets use Q-learning to train
+and then turn 180 degrees. But we don't want to encode that strategy ourselves,
+since it might not be optimal anyway. Instead, lets use Q-learning to train
 a neural network to discover a more optimal cat-navigating strategy.
  
+![](figs/network.png)
 
 
 :thumbsup:
