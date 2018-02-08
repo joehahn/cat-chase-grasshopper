@@ -73,12 +73,12 @@ random hop of distance of order ~2 in any directon + a systematic hop whose dist
 is ~1/separation in the direction away from the cat.
 
 But before we train the AI to steer the cat, lets play one game of cat-chase-grasshopper
-using the 'slow' strategy where the cat is preprogrammed to advance towards the bug
-at slow speeds, and the following plot shows the cat's trajectory (green dots)
+using a 'slow' strategy where the cat is preprogrammed to advance towards the bug
+at the slower speed, and the following plot shows the cat's trajectory (green dots)
 as it chases the hopping grasshopper as it random-walks (blue dots).
 ![](figs/xy_slow.png)<br />
 The large translucent dots show the cat and bug's final positions, and initial
-positions are the intermediate dense dots, and the plot below shows that rewards
+positions are the intermediate dense dots. The plot below shows that rewards
 that the cat accumulated during this game:
 ![](figs/rewards.png)
 
