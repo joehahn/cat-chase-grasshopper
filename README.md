@@ -86,8 +86,8 @@ Now play this game again using a 'fast' strategy where the cat is preprogrammed
 to always advance towards the bug at the 5x faster speed:
 ![](figs/xy_fast.png)<br />
 So after each hop, the cat can narrow the distance in less time, but because the cat
-can only turn in 25 degree increments, the fast cat then has to make 
-fairly wide orbits around the bug to scoop up rewards until the bug eventually
+can only turn in 25 degree increments, the faster cat then has to make 
+fairly wide orbits around the bug in order to scoop up rewards until the bug
 hops away.
 
 A wiser strategy would be to run fast after the bug hops and then slow down to receive greater
