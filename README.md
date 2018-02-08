@@ -77,6 +77,7 @@ using the 'slow' strategy where the cat is preprogrammed to advance towards the 
 at slow speeds, and the following plot shows the cat's trajectory (green dots)
 as it chases the hopping grasshopper as it random-walks (blue dots).
 ![](figs/xy_slow.png)
+
 The large translucent dots indicate the cat and bug's final positions, and initial
 positions are the intermediate dense dots.
  
