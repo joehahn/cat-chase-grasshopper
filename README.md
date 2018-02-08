@@ -81,12 +81,13 @@ as it chases the hopping grasshopper as it random-walks (blue dots).
 The large translucent dots show the cat and bug's final positions, and initial
 positions are the intermediate dense dots, and the plot below shows that rewards
 that the cat accumulated during this game:
- ![](figs/rewards.png)
+![](figs/rewards.png)
 
 Now play this game again using the 'fast' strategy, here the cat is preprogrammed
 to always turn towards the bug and advance at the faster speed that is 5x faster than
 the cat's slow speed:
 ![](figs/xy_fast.png)
+
 So after each hop, the cat can narrow the distance in less time, but because the cat
 can only turn in 25 degree increments, the fast cat then has to make 
 fairly wide orbits around the bug to scoop up rewards, at least until the bug hops away.
